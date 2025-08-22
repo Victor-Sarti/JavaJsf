@@ -11,25 +11,26 @@
 
 	<h:form>
         First Name: 
-        <h:inputText id="firstName" value="#{studentThree.firstName}" />
+        <h:inputText id="firstName" value="#{studentFour.firstName}" />
 
 		<br/><br/>
 
         Last Name: 
-        <h:inputText id="lastName" value="#{studentThree.lastName}" />
+         <h:inputText id="lastName" value="#{studentFour.lastName}" />
 
 		<br/><br/>
 		
 		Favorite Programming Languages:
-			<h:selectOneRadio value="#{studentThree.favoriteLanguage}">
+	 <h:selectManyCheckbox value="#{studentFour.favoriteLanguages}">
+	 
 			<f:selectItem itemValue="Java" itemLabel="Java"/>
 		   	<f:selectItem itemValue="C#" itemLabel="C#"/>
 		   	<f:selectItem itemValue="PHP" itemLabel="PHP"/>
 		   	<f:selectItem itemValue="Ruby" itemLabel="Ruby"/>
-			</h:selectOneRadio>
+	 </h:selectManyCheckbox>
 	
 		<br/><br/>
-		<h:commandButton value="Submit" action="student_three_response" />
+		<h:commandButton value="Submit" action="student_four_response" />
 	</h:form>
 
 </h:body>
